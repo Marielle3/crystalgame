@@ -10,17 +10,27 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <style>
- .panel-body{
+    .panel-body {
       width: 300px;
-    height: 100px;
-    border: 1px solid blue;
+      height: 200px;
+      border: 1px solid blue;
+      background-color: blue;
+      font-weight: bold;
+    }
+
+    .panelbody {
+      width: 150px;
+      height: 150px;
+      border: 1px solid blue;
+      background-color: aqua;
+      font-weight: bold;
     }
   </style>
   <title>Crystal Collector</title>
 </head>
 
 <body background="assets/images/backgroundpattern2.jpg">
- 
+
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">CrystalCollector!</h1>
@@ -56,12 +66,21 @@
   <div class="panel panel-default">
     <div class="row">
       <div class="col-md-3">
-        <div class="panel-body">Points
+        <div class="panel-body text-danger">Points
           <span id="points"></span>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="panelbody text-danger">
+            <p>Wins:</p>
+            <span id="wins"></span>
+            <p>Losses:</p>
+            <span id="lose"></span>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
 </body>
 
