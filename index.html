@@ -49,17 +49,6 @@
       <h1 class="display-4">CrystalCollector!</h1>
     </div>
   </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
 
   <div class="container-fluid">
     <div class="row">
@@ -80,7 +69,7 @@
     <div class="row">
       <div class="col-md-3">
         <div class="panel-body text-danger">Points
-          <span id="points"></span>
+          <span id="points-score"></span>
         </div>
       </div>
       <div class="row">
@@ -97,20 +86,28 @@
   </div>
 
     <div class="containerfluid">
-        <img src="assets/images/blackcrystal.jpg" alt="blackcrystal" class="img-thumbnail">
-        <img src="assets/images/bluecrystal.png" alt="bluecrystal" class="img-thumbnail">
-        <img src="assets/images/greencrystal.jpeg" alt="greencrystal" class="img-thumbnail">
-        <img src="assets/images/redcrystal.jpg" alt="redcrystal" class="img-thumbnail">
+        <img src="assets/images/blackcrystal.jpg" alt="blackcrystal" id="black" class="img-thumbnail">
+        <img src="assets/images/bluecrystal.png" alt="bluecrystal" id="blue" class="img-thumbnail">
+        <img src="assets/images/greencrystal.jpeg" alt="greencrystal" id="green" class="img-thumbnail">
+        <img src="assets/images/redcrystal.jpg" alt="redcrystal" id="red" class="img-thumbnail">
         </div>
         
         <div class="panel-group">
             <div class="panel panel-default">
-              <div class="panel-body text-danger">Your Total Score Is:</div>
+              <div class="panel-body text-danger">
+             Your Total Score Is:
+            <span id ="total-score"></span>
+          </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-body text-danger">Points</div>
+              <div class="panel-body text-danger">Your Points
+                  <span id ="points-guessed"></span>
+              </div>
             </div>
           </div>
+           <!-- Adds a link to the JavaScript file. Loaded at the bottom so it waits for the HTML content to display first. If you put this at the top it will crash, because the HTML IDs won"t exist yet.-->
+    <script src="assets/javascript/game.js"></script>
+
 </body>
 
 </html>
