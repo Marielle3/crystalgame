@@ -12,7 +12,7 @@
   <style>
     .panel-body {
       width: 300px;
-      height: 200px;
+      height: 100px;
       border: 1px solid blue;
       background-color: blue;
       font-weight: bold;
@@ -28,6 +28,13 @@
     .img-thumbnail{
       width: 100px;
       height: 100px;
+    }
+    .panel-group {
+      width: 200px;
+      height: 50px;
+      border: 1px solid blue;
+      background-color: aqua;
+      font-weight: bold;
     }
 
    
@@ -96,15 +103,14 @@
         <img src="assets/images/redcrystal.jpg" alt="redcrystal" class="img-thumbnail">
         </div>
         
-        <div class="panel panel-default">
-        <div class="row">
-        <div class="col-md-3">
-        <div class="panel-body text-danger">Your total score is:
-        <span id="total">0</span>
-        </div>
-        </div>
-        </div>
-
+        <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-body text-danger">Your Total Score Is:</div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-body text-danger">Points</div>
+            </div>
+          </div>
 </body>
 
 </html>
