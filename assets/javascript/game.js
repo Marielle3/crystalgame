@@ -60,48 +60,50 @@ function youLose(){
 $('#black').on('click', function(){
   pointsGuessed = pointsGuessed + black;
   console.log("New userTotal= " + pointsGuessed);
-  $('#total-score').text(pointsGuessed);
+  $('#points-guessed').text(pointsGuessed);
 
-  if (pointsGuessed == pointScore){
+  if (pointsGuessed == pointScore) {
     iWin();
   }
-  else (pointsGuessed > pointScore){
+  else (pointsGuessed > pointScore);{
     youLose();
   }
 })
+
 $('#blue').on('click', function(){
   pointsGuessed = pointsGuessed + blue;
   console.log("New userTotal= " + pointsGuessed);
-  $('#total-score').text(pointsGuessed);
+  $('#points-guessed').text(pointsGuessed);
 
   if (pointsGuessed == pointScore){
     iWin();
   }
-  else (pointsGuessed > pointScore){
+  else (pointsGuessed > pointScore);{
     youLose();
   }
 })
 $('#green').on('click', function(){
   pointsGuessed = pointsGuessed + green;
   console.log("New userTotal= " + pointsGuessed);
-  $('#total-score').text(pointsGuessed);
+  $('#points-guessed').text(pointsGuessed);
 
   if (pointsGuessed == pointScore){
     iWin();
   }
-  else (pointsGuessed > pointScore){
+  else (pointsGuessed > pointScore);{
     youLose();
   }
 })
+
 $('#red').on('click', function(){
   pointsGuessed = pointsGuessed + red;
   console.log("New userTotal= " + pointsGuessed);
-  $('#total-score').text(pointsGuessed);
+  $('#points-guessed').text(pointsGuessed);
 
   if (pointsGuessed == pointScore){
     iWin();
   }
-  else (pointsGuessed > pointScore){
+  else (pointsGuessed > pointScore);{
     youLose();
   }
 });
