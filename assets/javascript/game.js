@@ -42,16 +42,20 @@ function reset(){
 // if user correctly guesses and adds up to the total, we increment a win counter 
 
 function iWin(){
+  if(pointsGuessed == pointScore){
   alert("You won!");
   wins++;
   $('#wins').text(wins);
   reset();
+  }
 }
 function youLose(){
+  if ( pointsGuessed > pointScore){
   alert("You lose!");
   losses++;
   $('#lose').text(losses);
   reset();
+  }
 }
 
 // On click function for every time you choose a crystal, it has generated a 
